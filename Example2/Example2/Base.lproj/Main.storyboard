@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRT-4i-khd">
+                                <rect key="frame" x="104" y="177" width="112" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mhJ-ki-MOj"/>
+                                </constraints>
+                                <state key="normal" title="get by key chain"/>
+                                <connections>
+                                    <action selector="getByKeychain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kMP-By-1TZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDd-ST-OjL">
+                                <rect key="frame" x="90" y="105" width="140" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ouT-FC-i6D"/>
+                                </constraints>
+                                <state key="normal" title="get by UIPasteboard"/>
+                                <connections>
+                                    <action selector="getByUIPasteboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xS1-8P-NEb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5u0-Tf-Nab">
+                                <rect key="frame" x="101" y="258" width="118" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rBw-OV-zKQ"/>
+                                </constraints>
+                                <state key="normal" title="get by app group"/>
+                                <connections>
+                                    <action selector="getByAppGroup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cqQ-yr-ZUa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BDd-ST-OjL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="90" id="7Fp-bo-4KB"/>
+                            <constraint firstItem="5u0-Tf-Nab" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="101" id="96j-5a-aSU"/>
+                            <constraint firstItem="aRT-4i-khd" firstAttribute="top" secondItem="BDd-ST-OjL" secondAttribute="bottom" constant="42" id="LM4-Rf-BEp"/>
+                            <constraint firstItem="aRT-4i-khd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="104" id="N8m-ca-SdN"/>
+                            <constraint firstAttribute="trailing" secondItem="aRT-4i-khd" secondAttribute="trailing" constant="104" id="aTY-YX-hR6"/>
+                            <constraint firstItem="BDd-ST-OjL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="85" id="do2-mf-bZ8"/>
+                            <constraint firstAttribute="trailing" secondItem="BDd-ST-OjL" secondAttribute="trailing" constant="90" id="kfr-Z4-07T"/>
+                            <constraint firstItem="5u0-Tf-Nab" firstAttribute="top" secondItem="aRT-4i-khd" secondAttribute="bottom" constant="51" id="paF-Sx-K2c"/>
+                            <constraint firstAttribute="trailing" secondItem="5u0-Tf-Nab" secondAttribute="trailing" constant="101" id="yiT-3o-86t"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

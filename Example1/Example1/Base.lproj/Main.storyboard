@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dR3-L5-YUk">
+                                <rect key="frame" x="64" y="173" width="181" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ol7-Vw-2s2"/>
+                                </constraints>
+                                <state key="normal" title="urlscheme open example2"/>
+                                <connections>
+                                    <action selector="open:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5YF-J2-45s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsa-0W-z3w">
+                                <rect key="frame" x="106" y="280" width="96" height="30"/>
+                                <state key="normal" title="set app group"/>
+                                <connections>
+                                    <action selector="setAppGroup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gSl-V2-1I2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNL-et-Lav">
+                                <rect key="frame" x="85" y="113" width="139" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MDN-kS-kDz"/>
+                                </constraints>
+                                <state key="normal" title="set by UIPasteboard"/>
+                                <connections>
+                                    <action selector="setByUIPasteboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Gq-eo-bC5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhQ-GW-nIS">
+                                <rect key="frame" x="112" y="228" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nWG-05-yap"/>
+                                </constraints>
+                                <state key="normal" title="set key chain"/>
+                                <connections>
+                                    <action selector="setKeyChain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KfS-Yh-qvK"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="shared data " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="idw-Sw-dlT">
+                                <rect key="frame" x="56" y="60" width="209" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YT6-Hd-mL0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="idw-Sw-dlT" secondAttribute="trailing" constant="55" id="0rl-kG-6hm"/>
+                            <constraint firstItem="MhQ-GW-nIS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="112" id="3lL-sO-JyX"/>
+                            <constraint firstItem="dR3-L5-YUk" firstAttribute="top" secondItem="SNL-et-Lav" secondAttribute="bottom" constant="30" id="EZL-I4-mxI"/>
+                            <constraint firstItem="SNL-et-Lav" firstAttribute="top" secondItem="idw-Sw-dlT" secondAttribute="bottom" constant="23" id="IV5-bM-fgj"/>
+                            <constraint firstItem="MhQ-GW-nIS" firstAttribute="top" secondItem="dR3-L5-YUk" secondAttribute="bottom" constant="25" id="Pxo-fB-I1Z"/>
+                            <constraint firstItem="idw-Sw-dlT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="56" id="RYF-Fu-x2J"/>
+                            <constraint firstItem="dR3-L5-YUk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="64" id="WIy-Na-7a0"/>
+                            <constraint firstItem="SNL-et-Lav" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="85" id="aAM-pb-TiS"/>
+                            <constraint firstAttribute="trailing" secondItem="SNL-et-Lav" secondAttribute="trailing" constant="96" id="gUT-cR-0bT"/>
+                            <constraint firstItem="idw-Sw-dlT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="mTH-dE-lqO"/>
+                            <constraint firstAttribute="trailing" secondItem="MhQ-GW-nIS" secondAttribute="trailing" constant="118" id="mlJ-hl-mRk"/>
+                            <constraint firstAttribute="trailing" secondItem="dR3-L5-YUk" secondAttribute="trailing" constant="75" id="z90-hV-hKj"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="sharedTextfield" destination="idw-Sw-dlT" id="dwF-WC-IZg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+</document>
